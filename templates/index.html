@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Basic Calculator</title>
+  </head>
+  <body>
+    <h1>Basic Calculator</h1>
+    <form method="post">
+      <input type="text" name="num1" placeholder="Enter the first number" required="required">
+      <input type="text" name="num2" placeholder="Enter the first number" required="required">
+      <button value="add" name="buttonName">+</button>
+      <button value="sub" name="buttonName">-</button>
+      <button value="mul" name="buttonName">X</button>
+      <button value="divi" name="buttonName">÷</button>
+      {% if answer%}
+        <p>{{ answer }}</p>
+      {% endif %}
+    </form>
+  </body>
+</html>
